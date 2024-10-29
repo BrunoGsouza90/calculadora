@@ -80,17 +80,19 @@
 			margin-top: 6px;
 			flex-wrap: wrap;
 			justify-content: center;
+			width: 100%;
 		}
 
 		button.numero {
 			padding: 10px;
 			font-size: 1.5em;
-			margin: 10px;
+			margin: 5px;
 			border: 1px solid rgba(0, 0, 0, 0.699);
 			border-radius: 5px;
 			background-color: gray;
 			flex: 1 0 20%;
 			min-width: 50px;
+			max-width: 60px; /* Limita a largura máxima dos botões */
 		}
 
 		button.numero:hover {
@@ -143,6 +145,10 @@
 
 			button.numero {
 				font-size: 1.2em;
+			}
+
+			div#numeros {
+				justify-content: space-around;
 			}
 		}
 	</style>
